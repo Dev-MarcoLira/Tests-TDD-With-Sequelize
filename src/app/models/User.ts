@@ -1,4 +1,4 @@
-import bcrypt from 'bcrypt'
+import bcrypt from 'bcryptjs'
 import jwt from 'jsonwebtoken'
 
 const User = (sequelize, DataTypes) => {
@@ -31,6 +31,6 @@ const User = (sequelize, DataTypes) => {
     }
 
     return User
-}()
+}
 
 export default User

@@ -2,17 +2,17 @@
 
 import fs from 'fs'
 import path from 'path'
-import Sequelize from 'sequelize'
+import { Sequelize } from 'sequelize'
 import config from '../../config/database'
 
-const db = {}
+const db: any = {}
 const basename = path.basename(__filename)
 
 const sequelize = new Sequelize(
-    config.database,
-    config.username,
-    config.password,
-    config
+    config.database as string,
+    config.username as string,
+    config.password as string,
+    config as {}
 )
 
 fs.readdirSync(__dirname)
