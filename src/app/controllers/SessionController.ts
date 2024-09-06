@@ -1,5 +1,6 @@
 import { Request, Response } from 'express'
-import User from '../models'
+import DB from '../models'
+const { User } = DB
 
 class SessionController{
 
